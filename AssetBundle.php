@@ -12,15 +12,15 @@ use \yii\web\AssetBundle as BaseAssetBundle;
 
 class AssetBundle extends BaseAssetBundle
 {
-    public $sourcePath = '@vendor/gillz/yii2-image-viewer/vendor/ImageViewer-master/dist';
+    public $sourcePath = '@vendor/gillz/yii2-image-viewer/vendor/ImageViewer-master/';
     public $depends = [
         'yii\web\JqueryAsset',
     ];
 
     public $js = [
-        'viewer.min.js'
+        'imageviewer.min.js'
     ];
     public $css = [
-        'viewer.min.css'
+        'imageviewer.css'
     ];
 }
