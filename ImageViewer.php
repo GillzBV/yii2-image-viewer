@@ -14,7 +14,7 @@ use yii\base\InvalidConfigException;
 class ImageViewer extends Widget {
 
     public static $imageViewerHasBeenLoaded = false;
-    
+
     /**
      * @var string The image source for the image that will be displayed
      * This variable will be used to render the image that the user can click
@@ -51,16 +51,16 @@ class ImageViewer extends Widget {
     }
 
     protected function _renderHtml() {
-        
+
     }
 
     protected function _registerJavascript() {
         // Check if the image viewer has been loaded
         if (! self::$imageViewerHasBeenLoaded) {
             // Load the AssetBundle
-            AssetBundle::register(Yii::$app->view);
+            AssetBundle::register($this->getView());
             // Register the ImageViewer variale
-            Yii::$app->view->registerJs('var viewer = ImageViewer();');
+            \Yii::$app->view->registerJs('var viewer = ImageViewer();');
         }
     }
 }

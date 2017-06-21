@@ -14,8 +14,7 @@
     }
   ],
   "require": {
-    "yiisoft/yii2": "*",
-    "bower-asset/ImageViewer": "*"
+    "yiisoft/yii2": "*"
   },
   "autoload": {
     "psr-4": {
