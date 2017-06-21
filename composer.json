@@ -1,0 +1,25 @@
+{
+  "name": "gillz/yii2-image-viewer",
+  "description": "A Yii2 component for the ImageViewer Bower asset",
+  "keywords": ["yii2", "extension", "widget", "image", "full", "screen", "bower"],
+  "homepage": "https://github.com/noam148/yii2-image-manager",
+  "type": "yii2-extension",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "bvanleeuwen1995",
+      "homepage": "https://github.com/bvanleeuwen1995",
+      "email": "b.vanleeuwen@gillz.nl",
+      "role": "Plugin manager"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "*",
+    "bower-asset/ImageViewer": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "gillz\\imageViewer\\": ""
+    }
+  }
+}
